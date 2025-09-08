@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v5
         
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: ".node-version"
 
@@ -83,5 +83,5 @@ jobs:
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
-          retain_days: 1
-          keep_minimum_runs: 0    
+          retain_days: 3
+          keep_minimum_runs: 3    
